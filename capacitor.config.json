@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "DAH_U4_foodtogo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

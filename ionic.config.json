@@ -1,0 +1,7 @@
+{
+  "name": "DAH_U4_foodtogo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
