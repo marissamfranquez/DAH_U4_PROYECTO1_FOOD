@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Food to go
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="solid" color="danger" shape="round" (click)="signOut()">
+        Cerrar sesión
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card color= "dark">
+    <ion-card-content *ngFor="let Food of food">
+      <strong>{{Food.name}}</strong>
+      <p>$ <strong>{{Food.price}}</strong></p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

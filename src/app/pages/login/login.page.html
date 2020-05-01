@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <form [formGroup]="myform" class="form">
+    <ion-list>
+      <ion-item>
+        <ion-icon slot="start" name="mail"></ion-icon>
+        <ion-label position="center">Correo <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="key"></ion-icon>
+        <ion-label position="center">Contraseña <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" type="submit" (click)="signIn()">
+      Iniciar sesión
+    </ion-button>
+  </form>
+</ion-content>
